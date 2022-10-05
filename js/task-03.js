@@ -19,7 +19,8 @@ pEl.insertAdjacentElement("afterend", divEl);
 
 let html = "";
 images.forEach((element) => {
-    html += `<li style="height: 1200px; list-style-type: none"><img src=${element["url"]} style="height: 100%; background-size: cover" alt=${element["alt"]}></li>`;
+    html += `<li style="height: 1200px; list-style-type: none"><img src=${element["url"]}
+     style="height: 100%; background-size: cover" alt=${element["alt"]}></li>`;
 })
 
 
