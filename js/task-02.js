@@ -10,13 +10,17 @@ const ingredients = [
 const list = document.querySelector("#ingredients");
 
 let html = "";
-ingredients.forEach((element) => { 
+ingredients.forEach((element) => {
   
-  html += `<li class="item">${element}</li>`;
+  let itemList = document.createElement("li");
+  itemList.textContent = element;
+  itemList.classList.add("item");
+  list.append(itemList);
+  //html += `<li class="item">${element}</li>`;
   
-})
+});
 
-list.innerHTML = html;
+//list.innerHTML = html;
 
 //liEl.textContent = element;
 //liEl.className = "item";

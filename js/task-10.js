@@ -18,11 +18,14 @@ buttonCreateEl.addEventListener("click", (event) => {
         boxesEl.append(elBox);
         size += 10;
     }
+   
 });
 
 buttonDestroyEl.addEventListener("click", (event) => {
     const rmBoxes = [...boxesEl.childNodes];
     rmBoxes.forEach(element => {
-        element.remove()
+        element.remove();
+        
     })
+    
 });
