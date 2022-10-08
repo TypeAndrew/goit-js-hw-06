@@ -9,17 +9,19 @@ const ingredients = [
 
 const list = document.querySelector("#ingredients");
 
-let html = "";
-ingredients.forEach((element) => {
+//et html = "";
+const elements=[];
+ingredients.forEach((element,key) => {
   
   let itemList = document.createElement("li");
   itemList.textContent = element;
   itemList.classList.add("item");
-  list.append(itemList);
+  elements.push(itemList);
+  //list.append(itemList);
   //html += `<li class="item">${element}</li>`;
   
 });
-
+list.append(elements[0], elements[1], elements[2], elements[3], elements[4], elements[5]);
 //list.innerHTML = html;
 
 //liEl.textContent = element;
